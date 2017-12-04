@@ -6,38 +6,46 @@
     size_hint: 1, 1
     canvas:
         Color:
-            rgb: [0,0,1,1]
+            rgb: [0,0,0,.5]
         Rectangle:
             pos: self.pos
             size: self.size
     Button:
-        text: "Right"
-        pos_hint: {"right": 1, 'top': .2}
+        id: 1
+        text: "Black"
+        pos_hint: {"right": 1, 'top': .5}
         background_color: (1, 0, 0, 1)
         color: 1,0,0,1
         font_size: 40
-        size_hint: 0.3, 0.2
+        size_hint: 0.5, 0.5
+        on_press: root.Test_Function1()
     Button:
-        text: "Left"
-        pos_hint: {"right": .3, 'top': .2}
+        id: 2
+        text: "Blue"
+        pos_hint: {"right": .5, 'top': .5}
         background_color: (1, 0, 0, 1)
         color: 1,0,0,1
         font_size: 40
-        size_hint: 0.3, 0.2
+        size_hint: 0.5, 0.5
+        on_press: root.Test_Function2()
     Button:
-        text: "Up"
-        pos_hint: {"right": .65, 'top': .4}
+        id: 3
+        text: "Green"
+        pos_hint: {"right": .5, 'top': 1}
         background_color: (1, 0, 0, 1)
         color: 1,0,0,1
         font_size: 40
-        size_hint: 0.3, 0.2
+        size_hint: 0.5, 0.5
+        on_press: root.Test_Function3()
     Button:
-        text: "Down"
-        pos_hint: {"right": .65, 'top': .2}
+        id: 4
+        text: "Red"
+        pos_hint: {"right": 1, 'top': 1}
         background_color: (1, 0, 0, 1)
         color: 1,0,0,1
         font_size: 40
-        size_hint: 0.3, 0.2
+        size_hint: 0.5, 0.5
+        on_press: root.Test_Function4()
     
 #<Button>:
 #    background_color: (0, 0, 0, 1)
