@@ -1,31 +1,47 @@
 #File name: 2DGame.py
 
 
-<Button>:
-    background_color: (0, 0, 0, 1)
-    color: 0,0,1,1
-    font_size: 40
-    size_hint: 0.3, 0.2
-
-
 <FloatLayout>:
     pos_hint: {'center_y': 0.5, 'center_x': 0.5}
-    size_hint: .5, .5
+    size_hint: 1, 1
     canvas:
         Color:
-            rgb: [1,0,0,1]
+            rgb: [0,0,1,1]
         Rectangle:
             pos: self.pos
             size: self.size
     Button:
         text: "Right"
-        pos_hint: {"right": 1, 'top': 0}
+        pos_hint: {"right": 1, 'top': .2}
+        background_color: (1, 0, 0, 1)
+        color: 1,0,0,1
+        font_size: 40
+        size_hint: 0.3, 0.2
     Button:
         text: "Left"
-        pos_hint: {"right": 0, 'top': 0}
+        pos_hint: {"right": .3, 'top': .2}
+        background_color: (1, 0, 0, 1)
+        color: 1,0,0,1
+        font_size: 40
+        size_hint: 0.3, 0.2
     Button:
-        text: "Jump"
-        pos_hint: {"right": .5, 'top': .3}
+        text: "Up"
+        pos_hint: {"right": .65, 'top': .4}
+        background_color: (1, 0, 0, 1)
+        color: 1,0,0,1
+        font_size: 40
+        size_hint: 0.3, 0.2
     Button:
-        text: "Duck"
-        pos_hint: {"right": .5, 'top': 0}
+        text: "Down"
+        pos_hint: {"right": .65, 'top': .2}
+        background_color: (1, 0, 0, 1)
+        color: 1,0,0,1
+        font_size: 40
+        size_hint: 0.3, 0.2
+    
+#<Button>:
+#    background_color: (0, 0, 0, 1)
+#    color: 0,0,1,1
+#    font_size: 40
+#    size_hint: 0.3, 0.2
+    
